@@ -51,6 +51,16 @@ abstract class AbstractClient implements ClientInterface
         return $this->verifyPeer;
     }
 
+    public function getVerifyHost()
+    {
+        return $this->verifyHost;
+    }
+
+    public function setVerifyHost($verifyHost)
+    {
+        $this->verifyHost = $verifyHost;
+    }
+
     public function setProxy($proxy)
     {
         $this->proxy = $proxy;
